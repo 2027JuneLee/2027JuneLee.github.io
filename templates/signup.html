@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+
+<body id="login">
+    <div class="container">
+        <h1 class="text-center" style="font-family: Winky Rough">Sign Up (to save progress!)</h1>
+        <div class="card login-card mx-auto">
+            <div class="card-body">
+                <a href="{{url_for('index')}}"><img class="login-logo d-block mx-auto mb-4" src="../static/img/logo.png"></a>
+
+                <form action="/signup" method="POST">
+                    <div class="mb-3">
+                        <input class="form-control" placeholder="Username" name = "username" required>
+                    </div>
+                   <div class="mb-3">
+                        <input type ="password" class="form-control" placeholder="Password (please don't your actual one)" name = "password" required>
+                   </div>
+                    <div class="mb-3">
+                        <label class="mb-2">When Will You Graduate? <br> (year; if not applicable, enter 0)</label>
+                        <input id="graduation" type="text" class="form-control" name="graduation" required>
+                    </div>
+                    <button onclick="showAlert()" type="submit" class="btn btn-login mt-4 d-block mx-auto">Register</button>
+                </form>
+            </div>
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <p style="color:red;" >{{messages[0]}}</p>
+                {% endif %}
+            {% endwith %}
+
+                <div class="signup">
+                    <p>Already a member? <a href="{{url_for('login')}}">Login</a></p>
+                </div>
+        </div>
+    </div>
+  `<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        function showAlert() {
+            const input = document.getElementById("graduation");
+            console.log(input)
+            if input !== "":
+                alert("Thanks for signing up! Have fun math-ing!");
+        }
+    </script>
+</body>
+</html>

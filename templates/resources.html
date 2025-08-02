@@ -1,0 +1,147 @@
+{% extends "header.html" %}
+{% block index %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1600Mode</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .column {
+            box-sizing: border-box;
+            float: left;
+            width: 50%;
+            height: 100%;
+/*            padding: 5px 2px 2px 5px;*/
+        }
+
+        .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+
+        img {
+          max-width: 100%;
+          height: auto;
+          display: block;
+        }
+
+        html, body { margin: 0; padding: 0; overflow-x: hidden; }
+
+        .top {
+            background-color: #53b4c6;
+            color: white;
+            text-align: center;
+            padding: 12px 10px 8px 10px;
+            overflow: hidden;
+        }
+
+        .aphover:hover{
+            transform: scale(1.07); /* Slightly enlarge */
+            transition: transform 0.3s ease;
+            opacity: 1;
+        }
+
+        .sathover:hover{
+            transform: scale(1.07); /* Slightly enlarge */
+            transition: transform 0.3s ease;
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="top">
+        <h1>The Best AP/SAT Math Resources!</h1>
+        <p>Click the images to get access to free study resources, tools & tips :) </p>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">(This is a Rickroll)</a>
+    </div>
+    <div>
+        <div class="column aphover">
+            <a href="#apr">
+                <img src="../static/img/ap.png" alt="AP Calc Logo" data-aos="zoom-in" style="width:100% height=90%" data-aos-easing="linear" data-aos-duration="900">
+            </a>
+        </div>
+        <div class="column  sathover">
+            <a href="#satr">
+                <img src="../static/img/sat.png" alt="SAT Logo" style="width:100% height=90%" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="900">
+            </a>
+        </div>
+    </div>
+    <p>FEATURES</p>
+    <ul>
+        <li>Resources come in 3 tiers: tier 1 (helpful for learning concepts), tier 2 (good for preparing and practicing for AP test), and tier 3 (essential!)</li>
+        <li>Learn more about SAT Math topics with curated resources & an AI tutor!</li>
+        <li>Get points by solving AI's questions and solutions!</li>
+        <li>(Note: very experimental and sloppy) TRY A GENERATED MOCK TEST AND FIND YOUR WEAK SPOTS/PREDICTED SCORE!</li>
+    </ul>
+
+    <section id="apr" class="py-5 bg-light" data-aos="fade-right">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-6">
+                             <h2 class="fw-bold mt-5">About Us!</h2>
+            <p class="mt-3" style="text-align:justify;">
+                MathDoneMad is a special project created by June (Junsoo) created within a 2-week time limit. It aims to give users an AI learning guide (fully integrated ChatGPT), curated resources, and a simple UI to help students survive AP Calculus and the SAT's math section! This is intended to be used to learn concepts, catch weak areas, and get unlimited practice questions for free and with ease. Unlike other websites, this is completely free and has minimal interruptions.
+            </p>
+                </div>
+                                <div class="col-md-6">
+                                <img style="width: 300px; height:300px; border-radius: 9px;" src="../static/img/herobg3.jpg" class="img-fluid d-block mx-auto" style="width:95%;">
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="satr" class="features-section">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4" data-aos="fade-up">Features</h2>
+            <div class="features-container">
+                <div class="feature-box" data-aos="zoom-in">
+        <i class="bi bi-search"></i>
+                    <h3>Learn With AI</h3>
+                    <p>Submit images, texts, and questions for AP Calc and SAT math. AI will help you learn and give you example problems!</p>
+                </div>
+                <div class="feature-box" data-aos="zoom-in" data-aos-delay="400">
+                <i class="bi bi-file-earmark-text"></i>
+                    <h3>Math Survival Kit</h3>
+                    <p>Get access to a handmade SAT formula sheet and curated resources for AP Calc (made by June, who survived AP Calc)</p>
+                </div>
+                <div class="feature-box" data-aos="zoom-in" data-aos-delay="800">
+                <i class="bi bi-pie-chart"></i>
+                    <h3>Score Booster (AI)</h3>
+                    <p>Get points for solving/asking questions, solve problems with GPT, learn your weak areas, and watch your scores grow!</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="small mb-0 mt-0">&copy; 2025 <strong>MathDoneMad</strong> <br> Made with ❤️ by Junsoo 'June' Lee for BCC</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 100,
+            once: true
+        });
+    </script>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,25 @@
+DAY 1 (07/26)
+    - Just made this idea! I'm gonna base this project off of FairRead and this shouldn't take a while unless I forgot how to code!
+    BRAINSTORM AREAAAAAAA
+    - PREMISE: HELP PEOPLE SOLVE MATH PROBLEMS & LEARN
+        - CALCULATOR FUNCTIONS
+        - AI CHATBOT & MATH THERAPY
+    - OK THIS IS KIND OF HARD!!!!
+    TODAY'S GOAL: AT LEAST GET THE PYTHON STARTING THINGY TO WORK SO I DON'T GET STRESSED LATER
+        STATUS: NOT YET, BUT I'M OPTIMISTIC
+            OK FAILED THE FIRST FEW TRIES BUT THIS SHOULD WORK!!!!
+<!--                        <li class="nav-item">-->
+<!--                            <a href="{{url_for('ap')}}" class="nav-link">AP Therapy</a>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item">-->
+<!--                            <a href="{{url_for('sat')}}" class="nav-link">1600Mode</a>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item">-->
+<!--                            <a href="{{url_for('profile')}}" class="nav-link">Profile</a>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item">-->
+<!--                            <a href="{{url_for('changelingo')}}" class="nav-link">Español</a>-->
+<!--                        </li>-->
+
+DAY 2, 07/27
+NOTE: IF YOU READ THIS, YOU WON'T BECOME A CODING EXPERT OR LEARN MY BRAIN'S FUNCTIONING AND THOUGHT PROCESS.
